@@ -4,6 +4,7 @@ import { ethers } from 'ethers'
 import {EthersAdapter, SafeAccountConfig} from '@safe-global/protocol-kit'
 import Safe, { SafeFactory } from '@safe-global/protocol-kit'
 import { ContractNetworksConfig } from '@safe-global/protocol-kit'
+import TransactionSigning from "./TransactionSigning";
 
 function App() {
   const [additionalOwnerCount, setAdditionalOwnerCount] = useState(0);
@@ -147,7 +148,7 @@ function App() {
             </div>
       }
   <hr/>
-
+<TransactionSigning />
     </div>
   );
 }
